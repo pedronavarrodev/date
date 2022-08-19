@@ -96,7 +96,7 @@ button {
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
-  margin-top: em;
+  margin-top: 0em;
   position: relative;
 }
 
@@ -119,16 +119,24 @@ button {
   background-color: #cacaca;
   background: #cacaca;
   box-shadow: 0 0 10px #f32121, 0 0 40px #f32121, 0 0 80px #f32121;
+  animation: zoomin 1.5s infinite alternate-reverse;
 }
+
+@keyframes zoomin {
+  0% {
+   transform: scale(1);
+  }
+ 
+  100% {
+   transform: scale(1.1);
+  }
+ }
+
 #btn1:hover {
-  background: white;
+  background: rgb(113, 248, 131);
   border: 2px solid black;
 }
-#btn2:hover {
-  background: rgb(255, 93, 93);
-  border: 2px solid black;
-  color: #000;
-}
+
 #btn2 {
   padding-left: 30px;
   padding-right: 30px;
@@ -140,17 +148,61 @@ button {
   background-color: red;
   color: #fff;
   transition: all 0.5s ease;
+  animation: zoomin2 1.5s infinite alternate-reverse;
+}
+
+@keyframes zoomin2 {
+  0% {
+   transform: scale(1);
+  }
+  10% {
+   transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+  transform: scale(1);
+  }
+  40% {
+  transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+  transform: scale(1);
+  }
+  70% {
+  transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+
+ }
+
+#btn2:hover {
+  background: rgb(173, 19, 19);
+  border: 2px solid black;
+  color: #fff;
 }
 
 .crush {
-  font-size: 25px;
-  margin-bottom: 2em;
+  font-size: 55px;
   font-weight: bold;
   /* color: red; */
   text-shadow: 2px 2px #000;
 }
 
 .sub {
+  font-size: 25px;
   margin: 10px 0 40px 0;
   text-shadow: 2px 2px #000;
 }
@@ -158,8 +210,8 @@ button {
 #hands {
   width: 50px;
   position: absolute;
-  top: 12em;
-  left: 4em;
+  top: 17em;
+  left: 8em;
   animation: bounce2 2s ease infinite;
   opacity: 0;
 }
@@ -226,4 +278,16 @@ button {
   display: flex;
   justify-content: center;
   align-items: bottom;
+}
+
+
+@media (min-width: 374px) {
+  .cont {
+    width: 60vw;
+    height: 18vw;
+  }
+  .text {
+    top: 20%;
+    font-size: 10vw;
+  }
 }

@@ -23,8 +23,6 @@
   align-items: center;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-
- 
 }
 
 .cont {
@@ -70,10 +68,13 @@
   transform-origin: 50% 50%;
   filter: drop-shadow(4px 4px 0 black);
   animation: bump 5.5s ease infinite;
-
-  
   
 }
+
+
+
+
+
 
 @keyframes bump {
     0% {
@@ -108,7 +109,7 @@
 .line {
   position: absolute;
   bottom: 20%;
-  width: 20vw;
+  width: 50vw;
   height: 0.5vw;
   background: white;
   transform: rotate(-8deg);
@@ -155,10 +156,6 @@
   font-size: 4vw;
   text-shadow: 2px 2px black;
   font-family: 'Anton', sans-serif;
-
-
-  
-  
 }
 
 p:nth-child(1n) {
@@ -201,4 +198,17 @@ p:nth-child(1n) {
 i {
   color: #2867B2;
   margin-top: 1vw
+}
+
+
+
+@media (min-width: 374px) {
+  .cont {
+    width: 60vw;
+    height: 18vw;
+  }
+  .text {
+    top: 20%;
+    font-size: 10vw;
+  }
 }

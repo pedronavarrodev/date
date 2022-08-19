@@ -1,8 +1,8 @@
 
+const audioClick = new Audio('./som/ooh.wav')
 
-
-const no = document.getElementById("btn2");
-const yes = document.getElementById("btn1");
+const no = document.getElementById("btn2");  // nao
+const yes = document.getElementById("btn1"); // sim
 
 //group 1 of btts
 
@@ -47,60 +47,67 @@ const hang = document.getElementById('hang');
 const sadsad = document.getElementById('sadsad');
 
 
-
 no.addEventListener("click", function (){
-			btt12.style.opacity= "1";
-			no.style.opacity= "0";
-									
+	btt12.style.opacity= "1";
+	no.style.opacity= "0";
+	audioClick.play()
+	audioClick.volume(0.2)
+			
 });
 
 btt12.addEventListener("click", function (){
 			btt12.style.opacity= "0";
 			bbtt3.style.opacity= "1";
-			hands.style.opacity= "1";
-									
+			audioClick.play()					
+			
 });
 
 bbtt3.addEventListener("click", function (){
 			btt1.style.opacity= "1";
 			bbtt3.style.opacity= "0";
 			sadcat.style.opacity= "1";
-									
+			
+			audioClick.play()					
 });
 
 btt1.addEventListener("click", function (){
 			btt1.style.opacity= "0";
 			btt4.style.opacity= "1";
 			hahahuhu.style.opacity= "1";
-									
+			audioClick.play()					
 });
 
 btt4.addEventListener("click", function (){
 			btt2.style.opacity= "1";
 			btt4.style.opacity= "0";
-			sadboi.style.opacity= "1";					
+			sadboi.style.opacity= "1";
+			audioClick.play()					
 });
 
 btt2.addEventListener("click", function (){
 			btt2.style.opacity= "0";
 			bbtt1.style.opacity= "1";
 			crying.style.opacity= "1";				
-			yes.style.padding= "50px";
+			yes.style.padding= "40px";
+			yes.style.background= "rgb(9, 255, 0)";
+			yes.style.fontSize ="30px";
+			hands.style.opacity= "1";
+			audioClick.play()
 				
 });
 
 bbtt1.addEventListener("click", function (){
 			bbtt8.style.opacity= "1";
 			bbtt1.style.opacity= "0";
-			sadman.style.opacity= "1";					
+			sadman.style.opacity= "1";
+			audioClick.play()					
 });
 
 bbtt8.addEventListener("click", function (){
 			bbtt8.style.opacity= "0";
 			btt6.style.opacity= "1";
-			hang.style.opacity= "1";			
-			
-					
+			hang.style.opacity= "1";
+			audioClick.play()						
 			
 });
 
@@ -108,6 +115,7 @@ btt6.addEventListener("click", function (){
 			bbtt6.style.opacity= "0";
 			btt4.style.opacity= "0";	 
 		 btt3.style.opacity= "1";
+		 audioClick.play()
 							
 });
 
@@ -131,6 +139,7 @@ btt3.addEventListener("click", function (){
 		 bbtt7.style.opacity= "1";
 		 
 		 bbtt9.style.opacity= "1";
+		 audioClick.play()
 		 					
 });
 

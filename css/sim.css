@@ -17,7 +17,7 @@ body {
   }
   
   .kilig {
-	padding-top: 100px;
+	padding-top: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -61,6 +61,12 @@ body {
 	text-align: center;
 }
 
+.ays b {
+	color: rgb(121, 0, 190);
+	font-weight: 600;
+	letter-spacing: -4px;
+}
+
 #btn1 {
     padding-left: 30px;
     padding-right: 30px;
@@ -74,8 +80,65 @@ body {
     background: #cacaca;
     box-shadow: 0 0 10px #f32121, 0 0 40px #f32121, 0 0 80px #f32121;
 	border-radius: 20px;
+	animation: zoomin 1.5s infinite alternate-reverse;
 }
   #btn1:hover {
-    background: white;
+    background: rgb(113, 248, 131);
     border: 2px solid black;
+  }
+
+  @keyframes zoomin {
+	0% {
+	 transform: scale(1);
+
+	}
+   
+	100% {
+	 transform: scale(1.1);
+	}
+   }
+
+  @media (min-width: 374px) {
+	.kilig {
+		padding-top: 320px;
+	}
+	.kilig img {
+		width: 300px;
+		margin-bottom: 80px;
+	}
+	.ay {
+		font-size: 30px;
+		padding-bottom: 50px;
+	}
+	.ays {
+		font-size: 30px;
+		padding-bottom: 220px;
+	}
+	#btn1 {
+		font-size : 30px;
+		width: 400px;
+	}
+  }
+
+  
+  @media (max-width: 1920px) {
+	.kilig {
+		padding-top: 50px;
+	}
+	.kilig img {
+		width: 300px;
+		margin-bottom: 20px;
+	}
+	.ay {
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
+	.ays {
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
+	#btn1 {
+		font-size : 20px;
+		width: 400px;
+	}
   }
