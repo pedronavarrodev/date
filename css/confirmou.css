@@ -14,13 +14,14 @@ body {
 
 .kilig img {
 	width: 200px;
-  }
-  
-  .kilig {
+	padding-top: 300px;
+}
+
+.kilig {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	flex-direction: row;
 	gap: 1em;
   }
   
@@ -38,7 +39,8 @@ body {
 	min-width: 100%;
 	min-height: 100%;
 	width: 100vw; */
-	height: 100vh;
+	width: auto;
+	height: 120vh;
 	z-index: -1;
   }
   
@@ -56,25 +58,8 @@ body {
   }
 
 .ays {
+	padding-top: 10px;
 	justify-content: center;
 	text-align: center;
 }
 
-#btn1 {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    font-family: 'Poppins';
-    border: 2px solid black;
-    transition: all 0.5s ease;
-    background-color: #cacaca;
-    background: #cacaca;
-    box-shadow: 0 0 10px #f32121, 0 0 40px #f32121, 0 0 80px #f32121;
-	border-radius: 20px;
-}
-  #btn1:hover {
-    background: white;
-    border: 2px solid black;
-  }
