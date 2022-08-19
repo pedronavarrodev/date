@@ -131,13 +131,8 @@ btt3.addEventListener("click", function (){
 		 bbtt7.style.opacity= "1";
 		 
 		 bbtt9.style.opacity= "1";
-		 
-		 
-							
+		 					
 });
-
-
-
 
 
 

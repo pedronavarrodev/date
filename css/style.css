@@ -2,9 +2,35 @@
 
 body {
   background: white;
-  font-family: Poppins;
+  font-family: 'Poppins';
+
 }
 
+
+button {
+  border-radius: 20px;
+}
+
+.container {
+  /* position: fixed; */
+  /* bottom: 0; */
+  background: rgba(0, 0, 0, 1);
+  color: #f1f1f1;
+  padding: 20px;
+
+}
+
+.video-container{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: auto;
+}
+
+  
 .g1 {
   display: flex;
   justify-content: center;
@@ -79,16 +105,21 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   font-weight: bold;
-  font-family: Poppins;
+  font-family: 'Poppins';
   border: 2px solid black;
+  transition: all 0.5s ease;
+  background-color: #cacaca;
+  background: #cacaca;
+  box-shadow: 0 0 10px #f32121, 0 0 40px #f32121, 0 0 80px #f32121;
 }
 #btn1:hover {
   background: white;
   border: 2px solid black;
 }
 #btn2:hover {
-  background: white;
+  background: rgb(255, 93, 93);
   border: 2px solid black;
+  color: #000;
 }
 #btn2 {
   padding-left: 30px;
@@ -96,16 +127,26 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   font-weight: bold;
-  font-family: Poppins;
-  border: 2px solid red;
+  font-family: 'Poppins';
+  border: 2px solid rgb(0, 0, 0);
+  background-color: red;
+  color: #fff;
+  transition: all 0.5s ease;
 }
 
 .crush {
   font-size: 25px;
   margin-bottom: 2em;
   font-weight: bold;
-  color: red;
+  /* color: red; */
+  text-shadow: 2px 2px #000;
 }
+
+.sub {
+  margin-top: -20px;
+  text-shadow: 2px 2px #000;
+}
+
 #hands {
   width: 50px;
   position: absolute;
@@ -163,83 +204,18 @@ body {
 
 /*BUTTONS OPACITY*/
 
-#btt1 {
+#btt1, #btt2, #btt3, #btt4, #btt5, #btt6, #btt7, #btt8, #btt9, #btt10, #btt11, #btt12, #bbtt1, #bbtt2, #bbtt3, #bbtt4, #bbtt5, #bbtt6, #bbtt7, #bbtt8, #bbtt9, #bbtt10, #bbtt11, #bbtt12   {
   opacity: 0;
-}
-#btt2 {
-  opacity: 0;
-}
-#btt3 {
-  opacity: 0;
-}
-#btt4 {
-  opacity: 0;
-}
-#btt5 {
-  opacity: 0;
-}
-#btt6 {
-  opacity: 0;
-}
-#btt7 {
-  opacity: 0;
-}
-#btt8 {
-  opacity: 0;
-}
-#btt9 {
-  opacity: 0;
-}
-#btt10 {
-  opacity: 0;
-}
-#btt11 {
-  opacity: 0;
-}
-#btt12 {
-  opacity: 0;
-}
-
-/*BUTTONS2 OPACITY*/
-#bbtt1 {
-  opacity: 0;
-}
-#bbtt2 {
-  opacity: 0;
-}
-#bbtt3 {
-  opacity: 0;
-}
-#bbtt4 {
-  opacity: 0;
-}
-#bbtt5 {
-  opacity: 0;
-}
-#bbtt6 {
-  opacity: 0;
-}
-#bbtt7 {
-  opacity: 0;
-}
-#bbtt8 {
-  opacity: 0;
-}
-#bbtt9 {
-  opacity: 0;
-}
-#bbtt10 {
-  opacity: 0;
-}
-#bbtt11 {
-  opacity: 0;
-}
-#bbtt12 {
-  opacity: 0;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: red;
+  color: #fff;
+  transition: all 0.5s ease;
 }
 
 .fff {
+  position: absolute;
+  margin-bottom: -550px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: bottom;
 }
